@@ -31,6 +31,8 @@ export default function Page() {
     </div>
   );
 }
+Page.displayName = 'Page';
+
 
 const Poster = React.forwardRef<HTMLDivElement>((props, ref) => (
   <div ref={ref} style={{
@@ -88,3 +90,4 @@ const Poster = React.forwardRef<HTMLDivElement>((props, ref) => (
     </div> 
   </div>
 ));
+Poster.displayName = 'Poster';
