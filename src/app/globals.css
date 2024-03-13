@@ -16,14 +16,13 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.poster-container {
+  width: 297mm;
+  height: 420mm;
+  background-image: url('../../public/yo2.png');
+  background-size: cover; /* Ensures image covers the entire element */
+  background-position: center; /* Centers the image horizontally and vertically */
+  background-color: black;
 }
 
 @layer utilities {
