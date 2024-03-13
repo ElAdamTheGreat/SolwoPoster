@@ -19,15 +19,15 @@ export default function Page() {
         // A3 size is 297mm x 420mm.
         const pdf = new jsPDF('p', 'mm', 'a3');
         pdf.addImage(imgData, 'PNG', 0, 0, 297, 420);
-        pdf.save("poster.pdf");
+        pdf.save("SolwoPlakát.pdf");
       });
     }
   }, []);
 
   return (
-    <div className="flex flex-col gap-2 pb-2">
+    <div className="flex flex-col gap-5 pb-5">
       <Poster ref={posterRef} />
-      <button onClick={exportToPdf} className="text-2xl font-bold">Export to PDF</button>
+      <button onClick={exportToPdf} className="text-4xl font-bold text-white">Export to PDF</button>
     </div>
   );
 }
