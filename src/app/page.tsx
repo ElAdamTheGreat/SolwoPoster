@@ -98,10 +98,10 @@ const Poster = React.forwardRef<HTMLDivElement>((props, ref) => (
             </div>
           </div>
           <div className="flex gap-3 pt-3">
-            <div className="flex flex-col items-end text-4xl font-semibold gap-2">
+            <div className="flex flex-col items-center font-semibold">
               <img src="/logo.jpg" alt="logo" width={128}/>
-              <p>SPŠEaG</p>
-              <p>V Úžlabině</p>
+              <p className="text-[33px]">SPŠEaG</p>
+              <p className="text-2xl">V Úžlabině</p>
             </div>
           </div>
         </div>
