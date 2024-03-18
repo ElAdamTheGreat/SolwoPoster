@@ -74,7 +74,7 @@ const Poster = React.forwardRef<HTMLDivElement>((props, ref) => (
       backgroundPosition: 'center',
       color: 'white',
   }}>
-    <div className="flex flex-col gap-7 pt-16 px-10 w-full">
+    <div className="flex flex-col gap-7 pt-10 px-10 w-full">
       <div className="flex flex-col gap-5 items-center border-b border-zinc-500 text-zinc-200 w-full pb-5">
         <div className="flex justify-between w-full">
           <div className="flex flex-col gap-5">
