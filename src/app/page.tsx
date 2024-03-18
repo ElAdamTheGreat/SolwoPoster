@@ -80,13 +80,13 @@ const Poster = React.forwardRef<HTMLDivElement>((props, ref) => (
           <div className="flex flex-col gap-5">
             <div className="flex flex-col gap-2">
               <div className="flex items-center gap-2 h-[72px]">
-                <p className="text-7xl font-bold">Solwo</p>
+                <p className="text-7xl font-bold pb-2">Solwo</p>
               </div>
               <p className="text-4xl font-semibold">Systém pro zadávání ticketů</p>
               <p className="text-2xl text-zinc-400">Webová aplikace</p>
             </div>
 
-            <div className="flex gap-3 text-3xl">
+            <div className="flex gap-3 text-3xl pb-5">
               <div className="flex flex-col gap-3">
                 <p>Autor projektu:</p>
                 <p>Vedoucí práce:</p>
@@ -117,14 +117,14 @@ const Poster = React.forwardRef<HTMLDivElement>((props, ref) => (
             <CodeLine>Tmavý motiv</CodeLine>
           </div>
           <div>
-            <div className="border-[3px] border-zinc-600 rounded-2xl overflow-hidden">
-              <img src="/solwo_[id]2.png" alt="" width={550}/>
+            <div className="border-[3px] border-zinc-600 rounded-2xl overflow-hidden h-[370px]">
+              <img src="solwo_dash2.png" alt="" width={550}/>
             </div>
           </div>
         </div>
-        <div className="flex gap-12 justify-center h-[450px] px-10">
-            <div className="border-[3px] border-zinc-600 rounded-2xl overflow-hidden">
-              <img src="/solwo_dash2.png" alt=""/>
+        <div className="flex gap-12 justify-center h-[430px] px-10">
+            <div className="border-[3px] border-zinc-600 rounded-2xl overflow-hidden w-[1200px]">
+              <img src="solwo_[id]2.png" alt=""/>
             </div>
             <div className="border-[3px] border-zinc-600 rounded-2xl overflow-hidden">
               <img src="solwo_slug2.png" alt=""/>
@@ -150,10 +150,10 @@ const Poster = React.forwardRef<HTMLDivElement>((props, ref) => (
           <p>Komunikace mezi serverem a klientem</p>
          </Card>
       </div>
-        <a className="flex rounded-lg" href="https://vercel.com/?utm_source=t3-oss&amp;utm_campaign=oss" rel="noopener noreferrer" target="_blank">
-          <img src="powered-by-vercel.svg" className="h-10 w-full" alt="Běží na Vercel"/>
-        </a>
-        <p className="text-center text-lg text-zinc-300">Plakát byl vytvořen ve formě webové aplikace.</p>
+      <a className="flex rounded-lg" href="https://vercel.com/?utm_source=t3-oss&amp;utm_campaign=oss" rel="noopener noreferrer" target="_blank">
+        <img src="powered-by-vercel.svg" className="h-10 w-full" alt="Běží na Vercel"/>
+      </a>
+      <p className="text-center text-lg text-zinc-300">Plakát byl vytvořen ve formě webové aplikace.</p>
 
     </div>
   </div>
@@ -172,10 +172,10 @@ function CodeLine({ children }: { children: React.ReactNode }) {
 function Card({ title, children }: { title: string, children: React.ReactNode }) {
   return (
     <div className="border-2 border-zinc-700 rounded-xl overflow-hidden">
-      <div className="bg-zinc-700 p-2 px-4 ">
+      <div className="bg-zinc-700 pb-4 px-4 ">
         <p className="text-2xl font-semibold">{title}</p>
       </div>
-      <div className="p-3 bg-zinc-700/50 h-full">
+      <div className="px-3 pb-5 pt-1 bg-zinc-700/50 h-full">
         {children}
       </div>
     </div>
